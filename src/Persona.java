@@ -1,7 +1,7 @@
-// lŠiƒCƒ“ƒ^[ƒtƒF[ƒX
+// äººæ ¼ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
 public interface Persona {
-	public void hello();		//ˆ¥A
-	public String askName();	//–¼‘O‚ğ•·‚«o‚·
-	public String askHobby();	//ï–¡‚ğ•·‚«o‚·
-	public void bye();			//‚³‚æ‚¤‚È‚ç
+	public void hello();		//æŒ¨æ‹¶
+	public String askName();	//åå‰ã‚’èãå‡ºã™
+	public String askHobby();	//è¶£å‘³ã‚’èãå‡ºã™
+	public void bye();			//ã•ã‚ˆã†ãªã‚‰
 }

@@ -12,34 +12,34 @@ public class MoePersona implements Persona {
 	}
 	@Override
 	public void hello() {
-		System.out.println("‚±‚ñ‚É‚¿‚Í‚ÁI‚¨ŒZ‚¿‚á‚ñB");
+		System.out.println("ã“ã‚“ã«ã¡ã¯ã£ï¼ãŠå…„ã¡ã‚ƒã‚“ã€‚");
 	}
 
 	@Override
 	public String askName() {
-		System.out.println("‚¨ŒZ‚¿‚á‚ñ‚Ì–¼‘O‚ğ‹³‚¦‚Ä‚ÁI");
+		System.out.println("ãŠå…„ã¡ã‚ƒã‚“ã®åå‰ã‚’æ•™ãˆã¦ã£ï¼");
 		try {
 			name = reader.readLine();
 			return name;
 		} catch (IOException e) {
-			name = "–¼–³‚µ";
+			name = "åç„¡ã—";
 			return name;
 		}
 	}
 
 	@Override
 	public String askHobby() {
-		System.out.println(name+"‚¨ŒZ‚¿‚á‚ñ‚Ìï–¡‚ğ‹³‚¦‚Ä‚Ù‚µ‚¢‚È‚ÁI");
+		System.out.println(name+"ãŠå…„ã¡ã‚ƒã‚“ã®è¶£å‘³ã‚’æ•™ãˆã¦ã»ã—ã„ãªã£ï¼");
 		try {
 			return reader.readLine();
 		} catch (IOException e) {
-			return "ƒj[ƒg";
+			return "ãƒ‹ãƒ¼ãƒˆ";
 		}
 	}
 
 	@Override
 	public void bye() {
-		System.out.println("‚ ‚è‚ª‚Æ‚¤‚ÁI‚Î‚¢‚Î‚¢I");
+		System.out.println("ã‚ã‚ŠãŒã¨ã†ã£ï¼ã°ã„ã°ã„ï¼");
 	}
 
 }

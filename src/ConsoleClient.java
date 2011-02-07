@@ -1,23 +1,23 @@
 
 /*
- * �N���C�A���g�����EN��JA�����󂯎��@��̓I�ɂǂ�Persona���o������Factory�Ŕ��f
- * �l������o���킯
- * 	�J���p�e�X�g�R�[�h�@�ˁ@���i�p�R�[�h
- * 	���[�J���C�Y
+ * クライアントからはENかJAかを受け取り　具体的にどのPersonaを出すかをFactoryで判断
+ * 考えられる出しわけ
+ * 	開発用テストコード　⇒　製品用コード
+ * 	ローカライズ
  * 
- * 	�������a�ɂȂ�i�����A�g�������N���C�A���g���ʂɔc������K�v���Ȃ��j
- * 	�����̃p�����[�^�ŏo��������d�g��
- * 	�N���C�A���g���łǂ��I�Ԃ��𓮓I�ɕ����Ȃǂ���
+ * 	結合が疎になる（作り方、使い方をクライアントが個別に把握する必要がない）
+ * 	何かのパラメータで出し分ける仕組み
+ * 	クライアント側でどれを選ぶかを動的に聞くなどする
  * 
  * Task
- * �ڋq���疼�O�Ǝ�𕷂��o��
- * ���A�˖��O�ˎ�ˈ��A�@�̏��ŏ�������
- * �Ȃ�ׂ��ڋq�ɍ�����������������悤�ɂ������i�p��Ɠ��{��A����̂Ȃ��悤�Ɂ@�Ȃǁj
- * ���܂̂Ƃ���͂Ƃ肠�������삷��΂悢���ǌ�قǍ����ւ��\��
+ * 顧客から名前と趣味を聞き出す
+ * 挨拶⇒名前⇒趣味⇒挨拶　の順で処理する
+ * なるべく顧客に合った聞き方をするようにしたい（英語と日本語、失礼のないように　など）
+ * いまのところはとりあえず動作すればよいけど後ほど差し替え予定
  * 
- * ConsoleClient�ȊO�ɂ����̃t�@�N�g���𗘗p����ꏊ������H�@�ˁ@Factory���ʂɂ��闝�R�H
- * 	JA��EN�ł̏o���킯������Ƃ������Ƃ������ł���
- * 	JA��EN�łǂ�Persona���o�邩��Factory�̐ӔC�@�i�J���ː��i�A�r���ŕύX������j
+ * ConsoleClient以外にもこのファクトリを利用する場所がある？　⇒　Factoryが別にある理由？
+ * 	JAとENでの出しわけがあるということを強制できる
+ * 	JAとENでどのPersonaが出るかはFactoryの責任　（開発⇒製品、途中で変更したり）
  */
 public class ConsoleClient {
 	private Persona p;

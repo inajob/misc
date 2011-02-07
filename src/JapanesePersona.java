@@ -10,12 +10,12 @@ public class JapanesePersona implements Persona {
 	}
 	@Override
 	public void hello() {
-		System.out.println("‚±‚ñ‚É‚¿‚Í@„‚Í“ú–{l‚Ì•û—p‚Ìƒyƒ‹ƒ\ƒi‚Å‚·.");
+		System.out.println("ã“ã‚“ã«ã¡ã¯ã€€ç§ã¯æ—¥æœ¬äººã®æ–¹ç”¨ã®ãƒšãƒ«ã‚½ãƒŠã§ã™.");
 	}
 
 	@Override
 	public String askName() {
-		System.out.println("‚ ‚È‚½‚Ì–¼‘O‚Í‰½‚Å‚·‚©?");
+		System.out.println("ã‚ãªãŸã®åå‰ã¯ä½•ã§ã™ã‹?");
 		try {
 			return reader.readLine();
 		} catch (IOException e) {
@@ -25,7 +25,7 @@ public class JapanesePersona implements Persona {
 
 	@Override
 	public String askHobby() {
-		System.out.println("‚ ‚È‚½‚Ìï–¡‚Í‰½‚Å‚·‚©?");
+		System.out.println("ã‚ãªãŸã®è¶£å‘³ã¯ä½•ã§ã™ã‹?");
 		try {
 			return reader.readLine();
 		} catch (IOException e) {
@@ -35,7 +35,7 @@ public class JapanesePersona implements Persona {
 
 	@Override
 	public void bye() {
-		System.out.println("‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·@‚³‚æ‚¤‚È‚ç");
+		System.out.println("ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€€ã•ã‚ˆã†ãªã‚‰");
 	}
 
 }
