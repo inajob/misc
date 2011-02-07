@@ -1,0 +1,34 @@
+[Box: ::Default - ::Default::ConsoleClient]
+X=20
+Y=266
+
+[Box: ::Default - ::Default::ConstPersona]
+X=737
+Y=40
+
+[Box: ::Default - ::Default::JapanesePersona]
+X=532
+Y=40
+
+[Box: ::Default - ::Default::MoePersona]
+X=327
+Y=40
+
+[Box: ::Default - ::Default::NormalPersona]
+X=122
+Y=40
+
+[Box: ::Default - ::Default::Persona]
+X=430
+Y=266
+
+[Box: ::Default - ::Default::PersonaFactory]
+X=225
+Y=266
+
+[Diagram: ::Default]
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowAssoc=1
+
